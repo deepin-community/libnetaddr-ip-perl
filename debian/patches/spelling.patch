@@ -1,0 +1,78 @@
+Description: fix spelling mistakes in the POD
+Origin: vendor
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2016-05-08
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=114239
+Bug: https://rt.cpan.org/Ticket/Display.html?id=114239
+
+--- a/IP.pm
++++ b/IP.pm
+@@ -186,7 +186,7 @@
+ 
+ B<NetAddr::IP> depends on B<NetAddr::IP::Util> which installs by
+ default with its primary functions compiled using Perl's XS extensions
+-to build a C library. If you do not have a C complier available or
++to build a C library. If you do not have a C compiler available or
+ would like the slower Pure Perl version for some other reason, then
+ type:
+ 
+--- a/Lite/Lite.pm
++++ b/Lite/Lite.pm
+@@ -108,7 +108,7 @@
+ 
+ B<NetAddr::IP::Lite> depends on B<NetAddr::IP::Util> which installs by default with its primary functions compiled
+ using Perl's XS extensions to build a 'C' library. If you do not have a 'C'
+-complier available or would like the slower Pure Perl version for some other
++compiler available or would like the slower Pure Perl version for some other
+ reason, then type:
+ 
+ 	perl Makefile.PL -noxs
+--- a/Lite/Util/Util.pm
++++ b/Lite/Util/Util.pm
+@@ -384,7 +384,7 @@
+ 
+ B<NetAddr::IP::Util> installs by default with its primary functions compiled
+ using Perl's XS extensions to build a 'C' library. If you do not have a 'C'
+-complier available or would like the slower Pure Perl version for some other
++compiler available or would like the slower Pure Perl version for some other
+ reason, then type:
+ 
+ 	perl Makefile.PL -noxs
+@@ -565,7 +565,7 @@
+ 
+ This function optimizes and rfc 1884 IPv6 hex address to reduce the number of
+ long strings of zero bits as specified in rfc 1884, 2.2 (2) by substituting
+-B<::> for the first occurence of the longest string of zeros in the address.
++B<::> for the first occurrence of the longest string of zeros in the address.
+ 
+ =item * $ipv6naddr = ipv4to6($netaddr);
+ 
+@@ -840,7 +840,7 @@
+ 	? 1 : 0;
+   }
+ 
+-  # truely hard way to do $ip++
++  # truly hard way to do $ip++
+   # add a constant, wrapping at netblock boundaries
+   # to subtract the constant, negate it before calling
+   # 'addwrap' since 'addconst' will extend the sign bits
+@@ -864,7 +864,7 @@
+   }
+ 
+   # something more useful
+-  # increment a /24 net to the NEXT net at the boundry
++  # increment a /24 net to the NEXT net at the boundary
+ 
+   my $nextnet = 256;	# for /24
+   LOOP:
+--- a/Lite/Util/lib/NetAddr/IP/InetBase.pm
++++ b/Lite/Util/lib/NetAddr/IP/InetBase.pm
+@@ -589,7 +589,7 @@
+ 
+ This function optimizes and rfc 1884 IPv6 hex address to reduce the number of
+ long strings of zero bits as specified in rfc 1884, 2.2 (2) by substituting
+-B<::> for the first occurence of the longest string of zeros in the address.
++B<::> for the first occurrence of the longest string of zeros in the address.
+ 
+ =cut
+ 

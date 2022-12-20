@@ -1,0 +1,39 @@
+Source: libnetaddr-ip-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Damyan Ivanov <dmn@debian.org>,
+           gregor herrmann <gregoa@debian.org>,
+           Ryan Niebur <ryan@debian.org>,
+           Jonathan Yu <jawnsy@cpan.org>,
+           Xavier Guimard <x.guimard@free.fr>,
+           Daniel Lintott <daniel@serverb.co.uk>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9.20120312),
+               libsocket6-perl,
+               libtest-pod-perl,
+               perl
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libnetaddr-ip-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libnetaddr-ip-perl.git
+Homepage: https://metacpan.org/release/NetAddr-IP
+
+Package: libnetaddr-ip-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Recommends: libsocket6-perl
+Description: IP address manipulation module
+ NetAddr::IP provides an object-oriented abstraction on top of IP addresses
+ or IP subnets, that allows for easy manipulations.
+ .
+ The internal representation of all IP objects is in 128 bit IPv6 notation.
+ IPv4 and IPv6 objects may be freely mixed.
+ .
+ The following operations are supported:
+ Basic IP conversion, netmask manipulation, subnet interpretation, bitwise
+ mask generation, full mask generation, subnet manipulation, expansion, and
+ range operations, sub/supernet tests, data type determination, and more
+ complex operations such as expansion of netblocks into arrays of smaller
+ blocks of arbitrary size, and CIDR block aggregation

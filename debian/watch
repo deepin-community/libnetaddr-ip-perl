@@ -1,0 +1,3 @@
+version=3
+opts=dversionmangle=s/\+dfsg// \
+https://metacpan.org/release/NetAddr-IP .*/NetAddr-IP-v?(\d[\d.]*)\.tar\.gz debian debian/repack.stub
